@@ -13,7 +13,7 @@ const roboto = Roboto({
 
 export default function Nav() {
     const [isNavOpen, setNavOpen] = useState(false);
-    const [dropdown, setDropdown] = useState(false);
+    const [openDropdown, setOpenDropdown] = useState(null); // State for tracking the open dropdown
 
     function toggleNav() {
         setNavOpen(!isNavOpen);
@@ -21,6 +21,11 @@ export default function Nav() {
 
     function closeNav() {
         setNavOpen(false);
+    }
+
+    // Function to handle dropdown toggling
+    function handleDropdown(id) {
+        setOpenDropdown(openDropdown === id ? null : id); // Toggle the dropdown
     }
 
     return (
@@ -44,15 +49,16 @@ export default function Nav() {
                     </div>
                 </div>
             </div>
-            <ul className={`lg:flex md:flex hidden text-white rounded-lg justify-between space-x-3 items-center`}>
+            <ul className={`lg:flex md:flex hidden text-white rounded-lg justify-between space-x-2 items-center`}>
+                {/* About Us Dropdown */}
                 <li 
-                    onMouseEnter={() => setDropdown(true)}
-                    onMouseLeave={() => setDropdown(false)}
-                    className='text-center relative w-full hover:bg-blue-800 rounded-md px-2 py-1'
+                    onMouseEnter={() => setOpenDropdown('about')}
+                    onMouseLeave={() => setOpenDropdown(null)}
+                    className='text-center relative hover:bg-blue-800 rounded-md px-2 py-1'
                 >
                     <button>About Us</button>
-                    {dropdown && (
-                        <div className={`lg:absolute bg-white border border-gray-400 text-black top-[60px] left-0 p-2 rounded-md`}>
+                    {openDropdown === 'about' && (
+                        <div className={`lg:absolute bg-white border border-gray-400 text-black left-0 p-2 rounded-md`}>
                             <ul className='space-y-2'>
                                 <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Homepage</Link></li>
                                 <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>About us</Link></li>
@@ -64,11 +70,72 @@ export default function Nav() {
                         </div>
                     )}
                 </li>
-                <li onClick={closeNav} className='text-center w-full hover:bg-blue-800 rounded-md px-2 py-1'><Link href={"/"}>Administration</Link></li>
-                <li onClick={closeNav} className='text-center w-full hover:bg-blue-800 rounded-md px-2 py-1'><Link href={"/"}>Academics</Link></li>
-                <li onClick={closeNav} className='text-center w-full hover:bg-blue-800 rounded-md px-2 py-1'><Link href={"/"}>Departments</Link></li>
-                <li onClick={closeNav} className='text-center w-full hover:bg-blue-800 rounded-md px-2 py-1'><Link href={"/"}>Central Facilities</Link></li>
-                <li onClick={closeNav} className='text-center w-full hover:bg-blue-800 rounded-md px-2 py-1'><Link href={"/"}>Student Corner</Link></li>
+                <li 
+                    onMouseEnter={() => setOpenDropdown('administration')}
+                    onMouseLeave={() => setOpenDropdown(null)}
+                    className='text-center relative hover:bg-blue-800 rounded-md px-2 py-1'
+                >
+                    <button>Administration</button>
+                    {openDropdown === 'administration' && (
+                        <div className={`lg:absolute bg-white border border-gray-400 text-black left-0 p-2 rounded-md`}>
+                            <ul className='space-y-2'>
+                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Board of society</Link></li>
+                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Board of governers</Link></li>
+                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Priciple/ Director</Link></li>
+                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Academic Council</Link></li>
+                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Examination Committee</Link></li>
+                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Finance Committee</Link></li>
+                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Deans/Registrar</Link></li>
+                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Office Administration</Link></li>
+                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Office Commities</Link></li>
+                            </ul>
+                        </div>
+                    )}
+                </li>
+                {/* Another Dropdown (e.g., Academics) */}
+                <li 
+                    onMouseEnter={() => setOpenDropdown('academics')}
+                    onMouseLeave={() => setOpenDropdown(null)}
+                    className='text-center relative hover:bg-blue-800 rounded-md px-2 py-1'
+                >
+                    <button>Academics</button>
+                    {openDropdown === 'academics' && (
+                        <div className={`lg:absolute bg-white border border-gray-400 text-black left-0 p-2 rounded-md`}>
+                            <ul className='space-y-2'>
+                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Programs</Link></li>
+                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Courses</Link></li>
+                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Faculty</Link></li>
+                            </ul>
+                        </div>
+                    )}
+                </li>
+
+                {/* Other navigation links */}
+                <li 
+                    onMouseEnter={() => setOpenDropdown('departments')}
+                    onMouseLeave={() => setOpenDropdown(null)}
+                    className='text-center relative hover:bg-blue-800 rounded-md px-2 py-1'
+                >
+                    <button>Departments</button>
+                    {openDropdown === 'departments' && (
+                        <div className={`lg:absolute bg-white border border-gray-400 text-black left-0 p-2 rounded-md`}>
+                            <ul className='space-y-2'>
+                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Computer Engineering</Link></li>
+                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Mechanical Engineering</Link></li>
+                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Civil Engineering</Link></li>
+                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Instrumentation Engineering</Link></li>
+                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Electrical Engineering</Link></li>
+                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>E&Tc Engineering</Link></li>
+                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Science & Humanities</Link></li>
+                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Workshop</Link></li>
+                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Academic and Examination Cell</Link></li>
+                            </ul>
+                        </div>
+                    )}
+                </li>
+                <li onClick={closeNav} className='text-center hover:bg-blue-800 rounded-md px-2 py-1'><Link href={"/"}>Departments</Link></li>
+                <li onClick={closeNav} className='text-center hover:bg-blue-800 rounded-md px-2 py-1'><Link href={"/"}>Central Facilities</Link></li>
+                <li onClick={closeNav} className='text-center hover:bg-blue-800 rounded-md px-2 py-1'><Link href={"/"}>Student Corner</Link></li>
             </ul>
         </nav>
     )
