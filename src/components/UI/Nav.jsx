@@ -35,7 +35,7 @@ export default function Nav() {
                     <div className='flex space-x-3 justify-center items-center'>
                         <Image src={"/gcoej-logo.png"} width={30} height={30} alt="Logo" />
                         <div className='hidden lg:block md:hidden'>
-                            <p className={`font-serif text-xl font-bold text-white`}>Government College of Engineering, Jalgaon</p>
+                            <p className={`font-serif text-lg font-bold text-white`}>Government College of Engineering, Jalgaon</p>
                             <p className={`${roboto.className} text-sm font-semibold text-slate-300`}>( An Autonomous Institute of Maharashtra )</p>
                         </div>
                     </div>
@@ -102,9 +102,16 @@ export default function Nav() {
                     {openDropdown === 'academics' && (
                         <div className={`lg:absolute bg-white border border-gray-400 text-black left-0 p-2 rounded-md`}>
                             <ul className='space-y-2'>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Programs</Link></li>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Courses</Link></li>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Faculty</Link></li>
+                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Programs (UG/PG)</Link></li>
+                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Syllabus</Link></li>
+                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Autonomy Rules</Link></li>
+                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Examination Rules</Link></li>
+                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Academic Calender</Link></li>
+                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Admission</Link></li>
+                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Fees Information</Link></li>
+                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Exam Timetables</Link></li>
+                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Results</Link></li>
+                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Research and Development Cell</Link></li>
                             </ul>
                         </div>
                     )}
@@ -134,8 +141,49 @@ export default function Nav() {
                     )}
                 </li>
                 <li onClick={closeNav} className='text-center hover:bg-blue-800 rounded-md px-2 py-1'><Link href={"/"}>Departments</Link></li>
-                <li onClick={closeNav} className='text-center hover:bg-blue-800 rounded-md px-2 py-1'><Link href={"/"}>Central Facilities</Link></li>
-                <li onClick={closeNav} className='text-center hover:bg-blue-800 rounded-md px-2 py-1'><Link href={"/"}>Student Corner</Link></li>
+                <li 
+                    onMouseEnter={() => setOpenDropdown('central')}
+                    onMouseLeave={() => setOpenDropdown(null)}
+                    className='text-center relative hover:bg-blue-800 rounded-md px-2 py-1'
+                >
+                    <button>Central Facilllities</button>
+                    {openDropdown === 'central' && (
+                        <div className={`lg:absolute bg-white border border-gray-400 text-black left-0 p-2 rounded-md`}>
+                            <ul className='space-y-2'>
+                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Central Library</Link></li>
+                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Computer Center</Link></li>
+                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Data Center</Link></li>
+                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Gymkhana</Link></li>
+                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Hostel</Link></li>
+                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Guest House</Link></li>
+                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Canteen</Link></li>
+                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Dispensary</Link></li>
+                            </ul>
+                        </div>
+                    )}
+                </li>
+                <li 
+                    onMouseEnter={() => setOpenDropdown('students')}
+                    onMouseLeave={() => setOpenDropdown(null)}
+                    className='text-center relative hover:bg-blue-800 rounded-md px-2 py-1'
+                >
+                    <button>Student Corner</button>
+                    {openDropdown === 'students' && (
+                        <div className={`lg:absolute bg-white border border-gray-400 text-black right-0 p-2 rounded-md`}>
+                            <ul className='space-y-2'>
+                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Computer Engineering</Link></li>
+                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Mechanical Engineering</Link></li>
+                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Civil Engineering</Link></li>
+                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Instrumentation Engineering</Link></li>
+                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Electrical Engineering</Link></li>
+                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>E&Tc Engineering</Link></li>
+                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Science & Humanities</Link></li>
+                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Workshop</Link></li>
+                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Academic and Examination Cell</Link></li>
+                            </ul>
+                        </div>
+                    )}
+                </li>
             </ul>
         </nav>
     )
