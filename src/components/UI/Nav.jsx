@@ -58,7 +58,7 @@ export default function Nav() {
                 >
                     <button>About Us</button>
                     {openDropdown === 'about' && (
-                        <div className={`lg:absolute bg-white border border-gray-400 text-black left-0 p-2 rounded-md`}>
+                        <div className={`lg:absolute md:absolute bg-white border border-gray-400 text-black left-0 p-2 rounded-md`}>
                             <ul className='space-y-2'>
                                 <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Homepage</Link></li>
                                 <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>About us</Link></li>
@@ -77,7 +77,7 @@ export default function Nav() {
                 >
                     <button>Administration</button>
                     {openDropdown === 'administration' && (
-                        <div className={`lg:absolute bg-white border border-gray-400 text-black left-0 p-2 rounded-md`}>
+                        <div className={`lg:absolute md:absolute bg-white border border-gray-400 text-black left-0 p-2 rounded-md`}>
                             <ul className='space-y-2'>
                                 <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Board of society</Link></li>
                                 <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Board of governers</Link></li>
@@ -100,7 +100,7 @@ export default function Nav() {
                 >
                     <button>Academics</button>
                     {openDropdown === 'academics' && (
-                        <div className={`lg:absolute bg-white border border-gray-400 text-black left-0 p-2 rounded-md`}>
+                        <div className={`lg:absolute md:absolute bg-white border border-gray-400 text-black left-0 p-2 rounded-md`}>
                             <ul className='space-y-2'>
                                 <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Programs (UG/PG)</Link></li>
                                 <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Syllabus</Link></li>
@@ -125,7 +125,7 @@ export default function Nav() {
                 >
                     <button>Departments</button>
                     {openDropdown === 'departments' && (
-                        <div className={`lg:absolute bg-white border border-gray-400 text-black left-0 p-2 rounded-md`}>
+                        <div className={`lg:absolute md:absolute bg-white border border-gray-400 text-black left-0 p-2 rounded-md`}>
                             <ul className='space-y-2'>
                                 <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Computer Engineering</Link></li>
                                 <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Mechanical Engineering</Link></li>
@@ -148,7 +148,7 @@ export default function Nav() {
                 >
                     <button>Central Facilllities</button>
                     {openDropdown === 'central' && (
-                        <div className={`lg:absolute bg-white border border-gray-400 text-black left-0 p-2 rounded-md`}>
+                        <div className={`lg:absolute md:absolute bg-white border border-gray-400 text-black left-0 p-2 rounded-md`}>
                             <ul className='space-y-2'>
                                 <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Central Library</Link></li>
                                 <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Computer Center</Link></li>
@@ -169,7 +169,7 @@ export default function Nav() {
                 >
                     <button>Student Corner</button>
                     {openDropdown === 'students' && (
-                        <div className={`lg:absolute bg-white border border-gray-400 text-black right-0 p-2 rounded-md`}>
+                        <div className={`lg:absolute md:absolute bg-white border border-gray-400 text-black right-0 p-2 rounded-md`}>
                             <ul className='space-y-2'>
                                 <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Computer Engineering</Link></li>
                                 <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Mechanical Engineering</Link></li>
