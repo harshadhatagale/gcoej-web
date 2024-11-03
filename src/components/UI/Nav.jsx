@@ -140,7 +140,7 @@ export default function Nav() {
                         </div>
                     )}
                 </li>
-                <li onClick={closeNav} className='text-center hover:bg-blue-800 rounded-md px-2 py-1'><Link href={"/"}>Departments</Link></li>
+            
                 <li 
                     onMouseEnter={() => setOpenDropdown('central')}
                     onMouseLeave={() => setOpenDropdown(null)}
