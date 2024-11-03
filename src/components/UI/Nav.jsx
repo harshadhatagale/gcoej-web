@@ -48,7 +48,7 @@ export default function Nav() {
                 <li 
                     onMouseEnter={() => setDropdown(true)}
                     onMouseLeave={() => setDropdown(false)}
-                    className='text-center relative hover:bg-blue-800 rounded-md px-2 py-1'
+                    className='text-center relative w-full hover:bg-blue-800 rounded-md px-2 py-1'
                 >
                     <button>About Us</button>
                     {dropdown && (
@@ -64,11 +64,11 @@ export default function Nav() {
                         </div>
                     )}
                 </li>
-                <li onClick={closeNav} className='text-center hover:bg-blue-800 rounded-md px-2 py-1'><Link href={"/"}>Administration</Link></li>
-                <li onClick={closeNav} className='text-center hover:bg-blue-800 rounded-md px-2 py-1'><Link href={"/"}>Academics</Link></li>
-                <li onClick={closeNav} className='text-center hover:bg-blue-800 rounded-md px-2 py-1'><Link href={"/"}>Departments</Link></li>
-                <li onClick={closeNav} className='text-center hover:bg-blue-800 rounded-md px-2 py-1'><Link href={"/"}>Central Facilities</Link></li>
-                <li onClick={closeNav} className='text-center hover:bg-blue-800 rounded-md px-2 py-1'><Link href={"/"}>Student Corner</Link></li>
+                <li onClick={closeNav} className='text-center w-full hover:bg-blue-800 rounded-md px-2 py-1'><Link href={"/"}>Administration</Link></li>
+                <li onClick={closeNav} className='text-center w-full hover:bg-blue-800 rounded-md px-2 py-1'><Link href={"/"}>Academics</Link></li>
+                <li onClick={closeNav} className='text-center w-full hover:bg-blue-800 rounded-md px-2 py-1'><Link href={"/"}>Departments</Link></li>
+                <li onClick={closeNav} className='text-center w-full hover:bg-blue-800 rounded-md px-2 py-1'><Link href={"/"}>Central Facilities</Link></li>
+                <li onClick={closeNav} className='text-center w-full hover:bg-blue-800 rounded-md px-2 py-1'><Link href={"/"}>Student Corner</Link></li>
             </ul>
         </nav>
     )
