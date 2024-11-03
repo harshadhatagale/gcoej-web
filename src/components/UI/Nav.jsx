@@ -60,12 +60,12 @@ export default function Nav() {
                     {openDropdown === 'about' && (
                         <div className={`lg:absolute md:absolute bg-white border border-gray-400 text-black left-0 p-2 rounded-md`}>
                             <ul className='space-y-2'>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Homepage</Link></li>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>About us</Link></li>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Vision & mission</Link></li>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Infrastructure</Link></li>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Future planning</Link></li>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Contact us</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Homepage</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>About us</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Vision & mission</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Infrastructure</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Future planning</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Contact us</Link></li>
                             </ul>
                         </div>
                     )}
@@ -79,15 +79,15 @@ export default function Nav() {
                     {openDropdown === 'administration' && (
                         <div className={`lg:absolute md:absolute bg-white border border-gray-400 text-black left-0 p-2 rounded-md`}>
                             <ul className='space-y-2'>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Board of society</Link></li>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Board of governers</Link></li>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Priciple/ Director</Link></li>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Academic Council</Link></li>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Examination Committee</Link></li>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Finance Committee</Link></li>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Deans/Registrar</Link></li>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Office Administration</Link></li>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Office Commities</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Board of society</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Board of governers</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Priciple/ Director</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Academic Council</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Examination Committee</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Finance Committee</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Deans/Registrar</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Office Administration</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Office Commities</Link></li>
                             </ul>
                         </div>
                     )}
@@ -102,16 +102,16 @@ export default function Nav() {
                     {openDropdown === 'academics' && (
                         <div className={`lg:absolute md:absolute bg-white border border-gray-400 text-black left-0 p-2 rounded-md`}>
                             <ul className='space-y-2'>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Programs (UG/PG)</Link></li>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Syllabus</Link></li>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Autonomy Rules</Link></li>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Examination Rules</Link></li>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Academic Calender</Link></li>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Admission</Link></li>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Fees Information</Link></li>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Exam Timetables</Link></li>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Results</Link></li>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Research and Development Cell</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Programs (UG/PG)</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Syllabus</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Autonomy Rules</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Examination Rules</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Academic Calender</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Admission</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Fees Information</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Exam Timetables</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Results</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Research and Development Cell</Link></li>
                             </ul>
                         </div>
                     )}
@@ -127,15 +127,15 @@ export default function Nav() {
                     {openDropdown === 'departments' && (
                         <div className={`lg:absolute md:absolute bg-white border border-gray-400 text-black left-0 p-2 rounded-md`}>
                             <ul className='space-y-2'>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Computer Engineering</Link></li>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Mechanical Engineering</Link></li>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Civil Engineering</Link></li>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Instrumentation Engineering</Link></li>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Electrical Engineering</Link></li>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>E&Tc Engineering</Link></li>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Science & Humanities</Link></li>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Workshop</Link></li>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Academic and Examination Cell</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Computer Engineering</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Mechanical Engineering</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Civil Engineering</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Instrumentation Engineering</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Electrical Engineering</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>E&Tc Engineering</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Science & Humanities</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Workshop</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Academic and Examination Cell</Link></li>
                             </ul>
                         </div>
                     )}
@@ -150,14 +150,14 @@ export default function Nav() {
                     {openDropdown === 'central' && (
                         <div className={`lg:absolute md:absolute bg-white border border-gray-400 text-black left-0 p-2 rounded-md`}>
                             <ul className='space-y-2'>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Central Library</Link></li>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Computer Center</Link></li>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Data Center</Link></li>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Gymkhana</Link></li>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Hostel</Link></li>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Guest House</Link></li>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Canteen</Link></li>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Dispensary</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Central Library</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Computer Center</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Data Center</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Gymkhana</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Hostel</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Guest House</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Canteen</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Dispensary</Link></li>
                             </ul>
                         </div>
                     )}
@@ -171,15 +171,15 @@ export default function Nav() {
                     {openDropdown === 'students' && (
                         <div className={`lg:absolute md:absolute bg-white border border-gray-400 text-black right-0 p-2 rounded-md`}>
                             <ul className='space-y-2'>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Computer Engineering</Link></li>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Mechanical Engineering</Link></li>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Civil Engineering</Link></li>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Instrumentation Engineering</Link></li>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Electrical Engineering</Link></li>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>E&Tc Engineering</Link></li>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Science & Humanities</Link></li>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Workshop</Link></li>
-                                <li className='hover:bg-slate-600 rounded-md hover:text-white'><Link href={"/"}>Academic and Examination Cell</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Computer Engineering</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Mechanical Engineering</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Civil Engineering</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Instrumentation Engineering</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Electrical Engineering</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>E&Tc Engineering</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Science & Humanities</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Workshop</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Academic and Examination Cell</Link></li>
                             </ul>
                         </div>
                     )}
