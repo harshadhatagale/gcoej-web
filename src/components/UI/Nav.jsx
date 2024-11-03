@@ -38,7 +38,7 @@ export default function Nav() {
                         </div>
                     </div>
                 </Link>
-                <div className='flex justify-center items-center space-x-2'>
+                <div className='flex justify-center items-center space-x-5'>
                     <div className='cursor-pointer'>
                         <CiSearch size={30} color='white' />
                     </div>
