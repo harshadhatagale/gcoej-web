@@ -6,15 +6,15 @@
 @media (max-width: 640px) { 
     .active {
         transition: 0.2s all ease-out;
-        height: 100vh;
+        height: 100svh;
         flex-direction: column;
     }
     .active logo 
     {
-        height: 20%;
-        
+        height: 30%; 
     }
     .active logo div {
+        text-align: center;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -22,7 +22,7 @@
         padding-top: 30px;
     }
     .active ul {
-        height: 80%;
+        height: 90%;
         display: flex;
         flex-direction: column;
         width: 100%;
