@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { Roboto } from "next/font/google"
 import { RiMenuFill } from "react-icons/ri";
 import { useState } from 'react';
-
+import { CiSearch } from "react-icons/ci";
 const roboto = Roboto({
     subsets: ["latin"],
     weight: ["100", "300", "400", "500", "700", "900",]
@@ -38,7 +38,12 @@ export default function Nav() {
                         </div>
                     </div>
                 </Link>
-                <div className='lg:hidden md:hidden' onClick={openNav}><RiMenuFill size={30} color='white' /></div>
+                <div className='flex justify-center items-center space-x-2'>
+                    <div className='cursor-pointer'>
+                        <CiSearch size={30} color='white' />
+                    </div>
+                    <div className='lg:hidden md:hidden' onClick={openNav}><RiMenuFill size={30} color='white' /></div>
+                </div>
             </div>
             <ul className={`lg:flex md:flex hidden text-white rounded-lg justify-between space-x-3 items-center`}>
                 <li onClick={closeNav} className='text-center hover:bg-blue-800 rounded-md px-2 py-1'><Link href={"/"} >About Us</Link></li>
