@@ -39,12 +39,12 @@ export default function Nav() {
                 <div className='lg:hidden md:hidden' onClick={openNav}><RiMenuFill size={30} color='white'/></div>
             </div>
             <ul className={`lg:flex md:flex hidden text-white rounded-lg justify-between space-x-3 items-center`}>
-                <li className='text-center hover:bg-blue-800 rounded-md px-2 py-1'><Link href={"/"} >About Us</Link></li>
-                <li className='text-center hover:bg-blue-800 rounded-md px-2 py-1'><Link href={"/"}>Administration</Link></li>
-                <li className='text-center hover:bg-blue-800 rounded-md px-2 py-1'><Link href={"/"}>Academics</Link></li>
-                <li className='text-center hover:bg-blue-800 rounded-md px-2 py-1'><Link href={"/"}>Departments</Link></li>
-                <li className='text-center hover:bg-blue-800 rounded-md px-2 py-1'><Link href={"/"}>Central Facillities</Link></li>
-                <li className='text-center hover:bg-blue-800 rounded-md px-2 py-1'><Link href={"/"}>Student Corner</Link></li>
+                <li onClick={closeNav} className='text-center hover:bg-blue-800 rounded-md px-2 py-1'><Link href={"/"} >About Us</Link></li>
+                <li onClick={closeNav} className='text-center hover:bg-blue-800 rounded-md px-2 py-1'><Link href={"/"}>Administration</Link></li>
+                <li onClick={closeNav} className='text-center hover:bg-blue-800 rounded-md px-2 py-1'><Link href={"/"}>Academics</Link></li>
+                <li onClick={closeNav} className='text-center hover:bg-blue-800 rounded-md px-2 py-1'><Link href={"/"}>Departments</Link></li>
+                <li onClick={closeNav} className='text-center hover:bg-blue-800 rounded-md px-2 py-1'><Link href={"/"}>Central Facillities</Link></li>
+                <li onClick={closeNav} className='text-center hover:bg-blue-800 rounded-md px-2 py-1'><Link href={"/"}>Student Corner</Link></li>
                 <button></button>
             </ul>
         </nav>
