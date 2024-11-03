@@ -17,7 +17,7 @@ export default function Nav() {
         if (isNavOpen) {
             setNavOpen(!isNavOpen)
         }
-        else{
+        else {
             setNavOpen(!isNavOpen)
         }
     }
@@ -29,14 +29,16 @@ export default function Nav() {
     return (
         <nav className={`flex ${isNavOpen ? "active" : ""} shadow-lg bg-blue-600 h-16 px-2 justify-between w-full items-center`}>
             <div className='flex py-3 lg:py-0 md:py-0 logo justify-between items-center w-full'>
-                <div className='flex space-x-3 justify-center items-center'>
-                    <Image src={"/gcoej-logo.png"} width={30} height={30}></Image>
-                    <div className='hidden lg:block md:hidden'>
-                    <p className={`font-serif text-xl font-bold text-white`}>Goverment College of Engineering, Jalgaon</p>
-                    <p className={`${roboto.className} text-sm font-semibold text-slate-300`}>( An Autonomus Institute of Maharastra )</p>
+                <Link href={"/"}>
+                    <div className='flex space-x-3 justify-center items-center'>
+                        <Image src={"/gcoej-logo.png"} width={30} height={30}></Image>
+                        <div className='lg:block py-1'>
+                            <p className={`font-serif text-md lg:text-xl font-bold text-white`}>Goverment College of Engineering, Jalgaon</p>
+                            <p className={`${roboto.className} text-sm font-semibold text-slate-300`}>( An Autonomus Institute of Maharastra )</p>
+                        </div>
                     </div>
-                </div>
-                <div className='lg:hidden md:hidden' onClick={openNav}><RiMenuFill size={30} color='white'/></div>
+                </Link>
+                <div className='lg:hidden md:hidden' onClick={openNav}><RiMenuFill size={30} color='white' /></div>
             </div>
             <ul className={`lg:flex md:flex hidden text-white rounded-lg justify-between space-x-3 items-center`}>
                 <li onClick={closeNav} className='text-center hover:bg-blue-800 rounded-md px-2 py-1'><Link href={"/"} >About Us</Link></li>
