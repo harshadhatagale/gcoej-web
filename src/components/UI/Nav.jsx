@@ -41,15 +41,12 @@ export default function Nav() {
                     </div>
                 </Link>
                 <div className='flex justify-center items-center space-x-5'>
-                    <div className='cursor-pointer'>
-                        <CiSearch size={30} color='white' />
-                    </div>
                     <div className='lg:hidden md:hidden' onClick={toggleNav}>
                         <RiMenuFill size={30} color='white' />
                     </div>
                 </div>
             </div>
-            <ul className={`lg:flex md:flex hidden text-white rounded-lg justify-between space-x-2 items-center`}>
+            <ul className={`lg:flex mx-2 md:flex hidden text-white rounded-lg justify-between space-x-2 items-center`}>
                 {/* About Us Dropdown */}
                 <li 
                     onMouseEnter={() => setOpenDropdown('about')}
@@ -171,15 +168,15 @@ export default function Nav() {
                     {openDropdown === 'students' && (
                         <div className={`lg:absolute md:absolute bg-white border border-gray-400 text-black right-0 p-2 rounded-md`}>
                             <ul className='space-y-2'>
-                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Computer Engineering</Link></li>
-                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Mechanical Engineering</Link></li>
-                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Civil Engineering</Link></li>
-                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Instrumentation Engineering</Link></li>
-                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Electrical Engineering</Link></li>
-                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>E&Tc Engineering</Link></li>
-                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Science & Humanities</Link></li>
-                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Workshop</Link></li>
-                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Academic and Examination Cell</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Placement</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>T&P Cell</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>ED Cell</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Scholarships & Awards</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Students' Support Facility</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Alumni</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Events</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>IQAC</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Photo Gallery</Link></li>
                             </ul>
                         </div>
                     )}
