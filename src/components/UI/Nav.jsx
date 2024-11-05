@@ -5,7 +5,12 @@ import Image from 'next/image'
 import { Roboto } from "next/font/google"
 import { RiMenuFill } from "react-icons/ri";
 import { CiSearch } from "react-icons/ci";
-
+import {AiOutlineInfoCircle} from "react-icons/ai"
+import {FaUserTie} from "react-icons/fa"
+import {FaGraduationCap} from "react-icons/fa"
+import {MdOutlineBusinessCenter} from "react-icons/md"
+import {MdOutlineHomeRepairService} from "react-icons/md"
+import {FaUserFriends} from "react-icons/fa"
 const roboto = Roboto({
     subsets: ["latin"],
     weight: ["100", "300", "400", "500", "700", "900"],
@@ -97,7 +102,7 @@ export default function Nav() {
                 >
                     <button>Academics</button>
                     {openDropdown === 'academics' && (
-                        <div className={`lg:absolute md:absolute bg-white border border-gray-400 text-black left-0 p-2 rounded-md`}>
+                        <div className={`lg:absolute overflow-y-scroll h-[400px] md:absolute bg-white border border-gray-400 text-black left-0 p-2 rounded-md`}>
                             <ul className='space-y-2'>
                                 <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Programs (UG/PG)</Link></li>
                                 <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Syllabus</Link></li>
