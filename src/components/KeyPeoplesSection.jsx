@@ -17,22 +17,22 @@ export default function KeyPeoplesSection() {
             <div className='p-4 flex space-x-5 my-4 w-full border border-gray-400 shadow-md md:w-[500px] lg:w-[600px] rounded-md'>
                 <Image className='rounded-md' src={"/key1.jpeg"} width={100} height={100} />
                 <div className={`flex flex-col space-y-3`}>
-                    <p className='text-lg font-bold'>Shri. V. C. Rastogi</p>
-                    <p>Hon. Principal Secretary, Higher & Technical Education, Maharashtra</p>
+                    <p className={`${roboto.className} md:text-xl lg:text-xl text-lg font-bold`}>Shri. V. C. Rastogi</p>
+                    <p className={`${poppins.className} text-md text-slate-800`}>Hon. Principal Secretary, Higher & Technical Education, Maharashtra</p>
                 </div>
             </div>
             <div className='p-4 flex space-x-5 my-4 w-full border border-gray-400 shadow-md md:w-[500px] lg:w-[600px] rounded-md'>
                 <Image className='rounded-md' src={"/key1.jpeg"} width={100} height={100} />
                 <div className={`flex flex-col space-y-3`}>
-                    <p className='text-lg font-bold'>Dr. Vinod Mohitkari</p>
-                    <p>Hon. Director, Directorate of Technical Education,</p>
+                    <p className={`${roboto.className} md:text-xl lg:text-xl text-lg font-bold`}>Dr. Vinod Mohitkari</p>
+                    <p className={`${poppins.className} text-md text-slate-800`}>Hon. Director, Directorate of Technical Education,</p>
                 </div>
             </div>
             <div className='p-4 flex space-x-5 my-4 w-full border border-gray-400 shadow-md md:w-[500px] lg:w-[600px] rounded-md'>
                 <Image className='rounded-md' src={"/key3.jpeg"} width={100} height={100} />
                 <div className={`flex flex-col space-y-3`}>
-                    <p className='text-lg font-bold'>Dr. Suhas S. Gajre</p>
-                    <p>Hon. Principal, GCoE, Jalgaon</p>
+                    <p className={`${roboto.className} md:text-xl lg:text-xl text-lg font-bold`}>Dr. Suhas S. Gajre</p>
+                    <p className={`${poppins.className} text-md text-slate-800`}>Hon. Principal, GCoE, Jalgaon</p>
                 </div>
             </div>
         </div>
