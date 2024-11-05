@@ -29,7 +29,7 @@ export default function Nav() {
     }
 
     return (
-        <nav className={`flex ${isNavOpen ? "active" : ""} shadow-lg bg-blue-600 h-16 px-2 justify-between w-full items-center`}>
+        <nav className={`flex fixed top-0 ${isNavOpen ? "active" : ""} shadow-lg bg-blue-600 h-16 px-2 justify-between w-full items-center`}>
             <div className='flex py-3 lg:py-0 md:py-0 logo justify-between items-center w-full'>
                 <Link href={"/"} onClick={closeNav}>
                     <div className='flex space-x-3 justify-center items-center'>
