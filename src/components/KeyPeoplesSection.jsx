@@ -24,7 +24,7 @@ export default function KeyPeoplesSection() {
                     </div>
                 </div>
                 <div className='p-4 flex space-x-5 my-4 w-full border border-gray-400 shadow-md md:w-[90%] lg:w-[90%] rounded-md'>
-                    <Image className='rounded-md' src={"/key2.jpeg"} width={100} height={100} />
+                    <Image className='rounded-md' src={"/key2.png"} width={100} height={100} />
                     <div className={`flex flex-col space-y-3`}>
                         <p className={`${roboto.className} md:text-xl lg:text-xl text-lg font-bold`}>Dr. Vinod Mohitkari</p>
                         <p className={`${poppins.className} text-md text-slate-800`}>Hon. Director, Directorate of Technical Education,</p>
