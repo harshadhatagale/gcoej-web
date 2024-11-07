@@ -4,13 +4,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Roboto } from "next/font/google"
 import { RiMenuFill } from "react-icons/ri";
-import { CiSearch } from "react-icons/ci";
-import {AiOutlineInfoCircle} from "react-icons/ai"
-import {FaUserTie} from "react-icons/fa"
-import {FaGraduationCap} from "react-icons/fa"
-import {MdOutlineBusinessCenter} from "react-icons/md"
-import {MdOutlineHomeRepairService} from "react-icons/md"
-import {FaUserFriends} from "react-icons/fa"
 const roboto = Roboto({
     subsets: ["latin"],
     weight: ["100", "300", "400", "500", "700", "900"],
@@ -34,7 +27,7 @@ export default function Nav() {
     }
 
     return (
-        <nav className={`flex fixed top-0 ${isNavOpen ? "active" : ""} shadow-lg bg-blue-600 h-16 px-2 justify-between w-full items-center`}>
+        <nav className={`flex fixed z-50 top-0 ${isNavOpen ? "active" : ""} shadow-lg bg-blue-600 h-16 px-2 justify-between w-full items-center`}>
             <div className='flex py-3 lg:py-0 md:py-0 logo justify-between items-center w-full'>
                 <Link href={"/"} onClick={closeNav}>
                     <div className='flex space-x-3 justify-center items-center'>
@@ -79,7 +72,7 @@ export default function Nav() {
                 >
                     <button>Administration</button>
                     {openDropdown === 'administration' && (
-                        <div className={`lg:absolute md:absolute bg-white border border-gray-400 text-black left-0 p-2 rounded-md`}>
+                        <div className={`lg:absolute overflow-y-scroll custom-scrollbar h-[400px] md:absolute bg-white border border-gray-400 text-black left-0 p-2 rounded-md`}>
                             <ul className='space-y-2'>
                                 <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Board of society</Link></li>
                                 <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Board of governers</Link></li>
@@ -102,7 +95,7 @@ export default function Nav() {
                 >
                     <button>Academics</button>
                     {openDropdown === 'academics' && (
-                        <div className={`lg:absolute overflow-y-scroll h-[400px] md:absolute bg-white border border-gray-400 text-black left-0 p-2 rounded-md`}>
+                        <div className={`lg:absolute overflow-y-scroll custom-scrollbar h-[400px] md:absolute bg-white border border-gray-400 text-black left-0 p-2 rounded-md`}>
                             <ul className='space-y-2'>
                                 <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Programs (UG/PG)</Link></li>
                                 <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Syllabus</Link></li>
@@ -127,7 +120,7 @@ export default function Nav() {
                 >
                     <button>Departments</button>
                     {openDropdown === 'departments' && (
-                        <div className={`lg:absolute md:absolute bg-white border border-gray-400 text-black left-0 p-2 rounded-md`}>
+                        <div className={`lg:absolute overflow-y-scroll custom-scrollbar h-[400px] md:absolute bg-white border border-gray-400 text-black left-0 p-2 rounded-md`}>
                             <ul className='space-y-2'>
                                 <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Computer Engineering</Link></li>
                                 <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Mechanical Engineering</Link></li>

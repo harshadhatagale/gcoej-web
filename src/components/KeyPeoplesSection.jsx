@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import { Poppins } from 'next/font/google'
 import { Roboto } from 'next/font/google'
-
+import Link from 'next/link'
 const poppins = Poppins({
     subsets: ["latin"],
     weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"]
@@ -15,7 +15,7 @@ export default function KeyPeoplesSection() {
     return (
         <div className='w-full flex flex-col md:flex-row lg:flex-row'>
             <div className='my-6 flex-2 '>
-                <h2 className={`${poppins.className} my-5 text-3xl tracking-wide font-bold`}>Key Peoples:</h2>
+                <h2 className={`${poppins.className} my-5 text-green-700 text-3xl tracking-wide font-bold`}>Key Peoples:</h2>
                 <div className='p-4 flex space-x-5 my-4 w-full border border-gray-400 shadow-md md:w-[90%] lg:w-[90%] rounded-md'>
                     <Image className='rounded-md' src={"/key1.jpeg"} width={100} height={100} />
                     <div className={`flex flex-col space-y-3`}>
@@ -38,8 +38,21 @@ export default function KeyPeoplesSection() {
                     </div>
                 </div>
             </div>
-            <div className=' flex-1'>
-                <h2 className={`${poppins.className} my-5 text-3xl tracking-wide font-bold`}>Quick Links:</h2>
+            <div className='my-6 flex-1 border border-gray-400 p-3 rounded-md shadow-md h-fit bg-slate-300'>
+                <h2 className={`${poppins.className} text-slate-900 my-5 text-xl tracking-wide font-bold`}>Quick Links:</h2>
+                <ul className='flex flex-col space-y-2  w-full justify-center px-2 items-start'>
+                    <li className='hover:text-blue-500 hover:underline'><Link href={""}>Photo Gallery</Link></li>
+                    <li className='hover:text-blue-500 hover:underline'><Link href={""}>Results</Link></li>
+                    <li className='hover:text-blue-500 hover:underline'><Link href={""}>Mandatory Disclosure (RTI)</Link></li>
+                    <li className='hover:text-blue-500 hover:underline'><Link href={""}>Mandatory Disclosure</Link></li>
+                    <li className='hover:text-blue-500 hover:underline'><Link href={""}>Citizen Charter</Link></li>
+                    <li className='hover:text-blue-500 hover:underline'><Link href={""}>Autonomy Rules</Link></li>
+                    <li className='hover:text-blue-500 hover:underline'><Link href={""}>Central Library</Link></li>
+                    <li className='hover:text-blue-500 hover:underline'><Link href={""}>Central Computing</Link></li>
+                    <li className='hover:text-blue-500 hover:underline'><Link href={""}>IQAC</Link></li>
+                    <li className='hover:text-blue-500 hover:underline'><Link href={""}>AEC Format</Link></li>
+                    <li className='hover:text-blue-500 hover:underline'><Link href={""}>NIRF</Link></li>
+                </ul>
             </div>
         </div>
     )
