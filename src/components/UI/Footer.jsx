@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="container mx-auto flex flex-col items-center">
 
                 {/* College Name */}
-                <h2 className="lg:text-xl text-lg font-semibold mb-2 text-center">Government College of Engineering, Jalgaon</h2>
+                <h2 className="lg:text-xl text-lg font-semibold mb-4 text-center">Government College of Engineering, Jalgaon</h2>
                 <p className="text-gray-400 mb-4">GCOEJ - Excellence in Engineering Education</p>
 
                 {/* Social Links */}
@@ -26,7 +26,7 @@ const Footer = () => {
                         <FaLinkedin size={24} />
                     </a>
                 </div>
-                <div>
+                <div className='my-4'>
                     <ul className='flex flex-col lg:flex-row md:flex-row justify-center items-center space-x-2'>
                         <li className='text-gray-300 hover:underline'>
                             <Link href={""}>Online Payment Terms & Conditions</Link>
@@ -52,7 +52,7 @@ const Footer = () => {
                     </ul>
                 </div>
                 {/* Copyright */}
-                <p className="text-sm text-gray-500">
+                <p className="text-sm text-gray-500 mt-4">
                     &copy; {new Date().getFullYear()} Government College of Engineering, Jalgaon. All rights reserved.
                 </p>
             </div>
