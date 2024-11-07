@@ -1,6 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import Nav from "@/components/UI/Nav";
+import Footer from "@/components/UI/Footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
         <main className="px-5 lg:px-20 pt-20 custom-scrollbar">
           {children}
         </main>
+        <Footer/>
       </body>
     </html>
   );

@@ -40,18 +40,18 @@ export default function KeyPeoplesSection() {
             </div>
             <div className='my-6 flex-1 border border-gray-400 p-3 rounded-md shadow-md h-fit bg-slate-300'>
                 <h2 className={`${poppins.className} text-slate-900 my-5 text-xl tracking-wide font-bold`}>Quick Links:</h2>
-                <ul className='flex flex-col space-y-2  w-full justify-center px-2 items-start'>
-                    <li className='hover:text-blue-500 hover:underline'><Link href={""}>Photo Gallery</Link></li>
-                    <li className='hover:text-blue-500 hover:underline'><Link href={""}>Results</Link></li>
-                    <li className='hover:text-blue-500 hover:underline'><Link href={""}>Mandatory Disclosure (RTI)</Link></li>
-                    <li className='hover:text-blue-500 hover:underline'><Link href={""}>Mandatory Disclosure</Link></li>
-                    <li className='hover:text-blue-500 hover:underline'><Link href={""}>Citizen Charter</Link></li>
-                    <li className='hover:text-blue-500 hover:underline'><Link href={""}>Autonomy Rules</Link></li>
-                    <li className='hover:text-blue-500 hover:underline'><Link href={""}>Central Library</Link></li>
-                    <li className='hover:text-blue-500 hover:underline'><Link href={""}>Central Computing</Link></li>
-                    <li className='hover:text-blue-500 hover:underline'><Link href={""}>IQAC</Link></li>
-                    <li className='hover:text-blue-500 hover:underline'><Link href={""}>AEC Format</Link></li>
-                    <li className='hover:text-blue-500 hover:underline'><Link href={""}>NIRF</Link></li>
+                <ul className='flex flex-col space-y-2  w-full list-disc justify-center px-4 items-start'>
+                    <li className='hover:text-blue-500 hover:underline'><Link href={"https://gcoej.ac.in/site/gallery/"}>Photo Gallery</Link></li>
+                    <li className='hover:text-blue-500 hover:underline'><Link href={"https://gcoej.ac.in/site/?page=MzA="}>Results</Link></li>
+                    <li className='hover:text-blue-500 hover:underline'><Link href={"https://gcoej.ac.in/site/?page=NjE="}>Mandatory Disclosure (RTI)</Link></li>
+                    <li className='hover:text-blue-500 hover:underline'><Link href={"https://gcoej.ac.in/site/?page=NjI="}>Mandatory Disclosure</Link></li>
+                    <li className='hover:text-blue-500 hover:underline'><Link href={"https://gcoej.ac.in/site/?page=NjM="}>Citizen Charter</Link></li>
+                    <li className='hover:text-blue-500 hover:underline'><Link href={"https://gcoej.ac.in/site/?page=MTE="}>Autonomy Rules</Link></li>
+                    <li className='hover:text-blue-500 hover:underline'><Link href={"https://gcoej.ac.in/site/?page=Mzk="}>Central Library</Link></li>
+                    <li className='hover:text-blue-500 hover:underline'><Link href={"https://gcoej.ac.in/site/?page=NDA="}>Central Computing</Link></li>
+                    <li className='hover:text-blue-500 hover:underline'><Link href={"https://gcoej.ac.in/site/?page=NzQ="}>IQAC</Link></li>
+                    <li className='hover:text-blue-500 hover:underline'><Link href={"https://gcoej.ac.in/site/?page=NzY="}>AEC Format</Link></li>
+                    <li className='hover:text-blue-500 hover:underline'><Link href={"https://gcoej.ac.in/site/?page=NzU="}>NIRF</Link></li>
                 </ul>
             </div>
         </div>
