@@ -4,11 +4,11 @@ import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-6 mt-10">
+    <footer className="bg-gray-800 text-white py-6 mt-10 px-2 w-full">
       <div className="container mx-auto flex flex-col items-center">
         
         {/* College Name */}
-        <h2 className="text-xl font-semibold mb-2">Government College of Engineering, Jalgaon</h2>
+        <h2 className="lg:text-xl text-lg font-semibold mb-2">Government College of Engineering, Jalgaon</h2>
         <p className="text-gray-400 mb-4">GCOEJ - Excellence in Engineering Education</p>
 
         {/* Social Links */}
