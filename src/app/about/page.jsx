@@ -9,7 +9,8 @@ export default function page() {
                 The Government College of Engineering was established in 1996. The institute is affiliated to the Kavyitri Bahinabai North Maharashtra University, Jalgaon. Our institution has been NAAC accredited with a CGPA of 2.85 on a 4-point scale at B++ Grade valid for 5 years from 21-09-2024.  The institute has been granted academic autonomy by the affiliating university and Government of Maharashtra since June 2014. The institute offers undergraduate, post-graduation, and Ph.D. programs in Engineering. The details of these programs are as under:
             </p>
             <h3 className='text-xl font-bold'>Undergraduate Programmes</h3>
-            <table className='my-3 table-auto overflow-scroll w-full border-collapse border border-gray-300 rounded-lg shadow-lg'>
+            <div className="w-full overflow-x-scroll">
+            <table className='my-3 min-w-full border-collapse border border-gray-300 rounded-lg shadow-lg'>
                 <thead>
                     <tr className='bg-blue-600 text-white'>
                         <th className='border-r border-blue-700 py-4 text-left font-bold'>Sl. No.</th>
@@ -64,6 +65,7 @@ export default function page() {
                     </tr>
                 </tbody>
             </table>
+            </div>
             <p>Apart from educational activities, the institute continuously organizes extra-curricular activities like seminars, workshops, and lectures by dignitaries in the respective fields. With the changing technological front, the institute keeps regularly updating laboratories, infrastructure, computers, and machinery. Development of the institute since its establishment is as follows:
             </p>
             <ul>
