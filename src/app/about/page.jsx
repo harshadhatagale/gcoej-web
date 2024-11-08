@@ -13,55 +13,55 @@ export default function page() {
             <table className='my-3 min-w-full border-collapse border border-gray-300 rounded-lg shadow-lg'>
                 <thead>
                     <tr className='bg-blue-600 text-white'>
-                        <th className='border-r border-blue-700 py-4 text-left font-bold'>Sl. No.</th>
-                        <th className='border-r border-blue-700 py-4 text-left font-bold'>Branch</th>
-                        <th className='border-r border-blue-700 py-4 text-left font-bold'>Intake</th>
-                        <th className='border-r border-blue-700 py-4 text-left font-bold'>Year of Establishment</th>
-                        <th className='border-r border-blue-700 py-4 text-left font-bold'>Accreditation Status</th>
+                        <th className='border-r border-blue-700 px-6 py-4 text-left font-bold'>Sl. No.</th>
+                        <th className='border-r border-blue-700 px-6 py-4 text-left font-bold'>Branch</th>
+                        <th className='border-r border-blue-700 px-6 py-4 text-left font-bold'>Intake</th>
+                        <th className='border-r border-blue-700 px-6 py-4 text-left font-bold'>Year of Establishment</th>
+                        <th className='border-r border-blue-700 px-6 py-4 text-left font-bold'>Accreditation Status</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="bg-white hover:bg-blue-50">
-                        <td className='border-r border-gray-300'>1</td>
-                        <td className='border-r border-gray-300'>Mechanical Engineering</td>
-                        <td className='border-r border-gray-300'>60</td>
-                        <td className='border-r border-gray-300'>1996</td>
-                        <td className='border-r border-gray-300'>Accredited (2018-2021)</td>
+                        <td className='border-r border-gray-300 px-6 py-4'>1</td>
+                        <td className='border-r border-gray-300 px-6 py-4'>Mechanical Engineering</td>
+                        <td className='border-r border-gray-300 px-6 py-4'>60</td>
+                        <td className='border-r border-gray-300 px-6 py-4'>1996</td>
+                        <td className='border-r border-gray-300 px-6 py-4'>Accredited (2018-2021)</td>
                     </tr>
                     <tr class="bg-white hover:bg-blue-50">
-                        <td className='border-r border-gray-300'>2</td>
-                        <td className='border-r border-gray-300'>Instrumentation Engineering</td>
-                        <td className='border-r border-gray-300'>60</td>
-                        <td className='border-r border-gray-300'>1996</td>
-                        <td className='border-r border-gray-300'>Accredited (2018-2021)</td>
+                        <td className='border-r border-gray-300 px-6 py-4'>2</td>
+                        <td className='border-r border-gray-300 px-6 py-4'>Instrumentation Engineering</td>
+                        <td className='border-r border-gray-300 px-6 py-4'>60</td>
+                        <td className='border-r border-gray-300 px-6 py-4'>1996</td>
+                        <td className='border-r border-gray-300 px-6 py-4'>Accredited (2018-2021)</td>
                     </tr>
                     <tr class="bg-white hover:bg-blue-50">
-                        <td className='border-r border-gray-300'>3</td>
-                        <td className='border-r border-gray-300'>Electronics and Telecommunication Engineering</td>
-                        <td className='border-r border-gray-300'>60</td>
-                        <td className='border-r border-gray-300'>1996</td>
-                        <td className='border-r border-gray-300'>Applied for Re-accreditation, SAR Uploaded</td>
+                        <td className='border-r border-gray-300 px-6 py-4'>3</td>
+                        <td className='border-r border-gray-300 px-6 py-4'>Electronics and Telecommunication Engineering</td>
+                        <td className='border-r border-gray-300 px-6 py-4'>60</td>
+                        <td className='border-r border-gray-300 px-6 py-4'>1996</td>
+                        <td className='border-r border-gray-300 px-6 py-4'>Applied for Re-accreditation, SAR Uploaded</td>
                     </tr>
                     <tr class="bg-white hover:bg-blue-50">
-                        <td className='border-r border-gray-300'>4</td>
-                        <td className='border-r border-gray-300'>Computer Engineering</td>
-                        <td className='border-r border-gray-300'>60</td>
-                        <td className='border-r border-gray-300'>2007</td>
-                        <td className='border-r border-gray-300'>NA</td>
+                        <td className='border-r border-gray-300 px-6 py-4'>4</td>
+                        <td className='border-r border-gray-300 px-6 py-4'>Computer Engineering</td>
+                        <td className='border-r border-gray-300 px-6 py-4'>60</td>
+                        <td className='border-r border-gray-300 px-6 py-4'>2007</td>
+                        <td className='border-r border-gray-300 px-6 py-4'>NA</td>
                     </tr>
                     <tr class="bg-white hover:bg-blue-50">
-                        <td className='border-r border-gray-300'>5</td>
-                        <td className='border-r border-gray-300'>Electrical Engineering</td>
-                        <td className='border-r border-gray-300'>60</td>
-                        <td className='border-r border-gray-300'>2007</td>
-                        <td className='border-r border-gray-300'>NA</td>
+                        <td className='border-r border-gray-300 px-6 py-4'>5</td>
+                        <td className='border-r border-gray-300 px-6 py-4'>Electrical Engineering</td>
+                        <td className='border-r border-gray-300 px-6 py-4'>60</td>
+                        <td className='border-r border-gray-300 px-6 py-4'>2007</td>
+                        <td className='border-r border-gray-300 px-6 py-4'>NA</td>
                     </tr>
                     <tr class="bg-white hover:bg-blue-50">
-                        <td className='border-r border-gray-300'>6</td>
-                        <td className='border-r border-gray-300'>Civil Engineering</td>
-                        <td className='border-r border-gray-300'>60</td>
-                        <td className='border-r border-gray-300'>2010</td>
-                        <td className='border-r border-gray-300'>NA</td>
+                        <td className='border-r border-gray-300 px-6 py-4'>6</td>
+                        <td className='border-r border-gray-300 px-6 py-4'>Civil Engineering</td>
+                        <td className='border-r border-gray-300 px-6 py-4'>60</td>
+                        <td className='border-r border-gray-300 px-6 py-4'>2010</td>
+                        <td className='border-r border-gray-300 px-6 py-4'>NA</td>
                     </tr>
                 </tbody>
             </table>

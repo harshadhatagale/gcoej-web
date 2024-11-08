@@ -3,7 +3,7 @@ import "./globals.css";
 import Nav from "@/components/UI/Nav";
 import Footer from "@/components/UI/Footer";
 import { Roboto } from 'next/font/google'
-
+import NextTopLoader from 'nextjs-toploader';
 const roboto = Roboto({
     subsets: ["latin"],
     weight: ["100", "300", "400", "500", "700", "900"],
@@ -30,6 +30,12 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <NextTopLoader
+        color="red"
+        initialPosition={0.08}
+        showSpinner={false}
+        height={4}
+        />
         <Nav />
         <main className={`px-5 lg:px-20 pt-20 custom-scrollbar ${roboto.className}`}>
           {children}
