@@ -38,8 +38,8 @@ export default function KeyPeoplesSection() {
                     </div>
                 </div>
             </div>
-            <div className='my-6 flex-1 border border-gray-400 p-3 rounded-md shadow-md h-fit bg-slate-300'>
-                <h2 className={`${poppins.className} text-slate-900 my-5 text-xl tracking-wide font-bold`}>Quick Links:</h2>
+            <div className='my-6 flex-1 border border-gray-400 px-3 py-3 rounded-md shadow-md h-fit bg-slate-300'>
+                <h2 className={`${poppins.className} text-slate-900 mb-5 text-xl tracking-wide font-bold`}>Quick Links:</h2>
                 <ul className='flex flex-col space-y-2  w-full list-disc justify-center px-4 items-start'>
                     <li className='hover:text-blue-500 hover:underline'><Link href={"https://gcoej.ac.in/site/gallery/"}>Photo Gallery</Link></li>
                     <li className='hover:text-blue-500 hover:underline'><Link href={"https://gcoej.ac.in/site/?page=MzA="}>Results</Link></li>
