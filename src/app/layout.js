@@ -2,7 +2,12 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Nav from "@/components/UI/Nav";
 import Footer from "@/components/UI/Footer";
+import { Roboto } from 'next/font/google'
 
+const roboto = Roboto({
+    subsets: ["latin"],
+    weight: ["100", "300", "400", "500", "700", "900"],
+});
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -26,7 +31,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Nav />
-        <main className="px-5 lg:px-20 pt-20 custom-scrollbar">
+        <main className={`px-5 lg:px-20 pt-20 custom-scrollbar ${roboto.className}`}>
           {children}
         </main>
         <Footer/>
