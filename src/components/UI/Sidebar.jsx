@@ -6,7 +6,7 @@ import { CiMenuFries } from "react-icons/ci";
 export default function Sidebar({ activeTab, setActiveTab, toggleNav, setToggleNav, tabs }) {
     return (
         <aside className={`fixed sidenav top-16 select-none h-full left-0 bg-white lg:w-52 md:w-full w-full py-5 px-4 ${toggleNav ? "translate-x-0" : "-translate-x-full"}`}>
-            <CiMenuFries className='mb-3 ml-4 cursor-pointer' size={25} onClick={() => setToggleNav(false)} />
+            <CiMenuFries className='mb-3 ml-2 cursor-pointer' size={25} onClick={() => setToggleNav(false)} />
             <ul>
                 {tabs.map((tab) => (
                     <li

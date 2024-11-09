@@ -10,7 +10,7 @@ export default function Page() {
 
     return (
         <>
-            <div className='bg-white fixed top-20 left-4 cursor-pointer p-2 rounded-md'>
+            <div className='bg-white fixed top-20 left-2 cursor-pointer p-2 rounded-md'>
                 <CiMenuFries size={25} onClick={() => setToggleNav(true)} />
             </div>
 
