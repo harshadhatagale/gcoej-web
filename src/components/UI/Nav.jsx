@@ -58,7 +58,7 @@ export default function Nav() {
                                 <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Homepage</Link></li>
                                 <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/about"}>About us</Link></li>
                                 <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/vision_mission"}>Vision & mission</Link></li>
-                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Infrastructure</Link></li>
+                                <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/infrastructure"}>Infrastructure</Link></li>
                                 <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Future planning</Link></li>
                                 <li onClick={closeNav} className='hover:bg-gray-300 py-1 px-2 rounded-md hover:text-black'><Link href={"/"}>Contact us</Link></li>
                             </ul>

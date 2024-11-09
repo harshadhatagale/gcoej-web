@@ -50,4 +50,6 @@
   .custom-scrollbar::-webkit-scrollbar-thumb:hover {
     background-color: #1d72b8;
   }
-  
+  .sidenav{
+    transition: 0.2s all ease-out;
+  }
