@@ -6,7 +6,7 @@ const roboto = Roboto({
 });
 export default function Heading({content}) {
   return (
-    <div className='text-2xl w-[80%] mx-auto rounded-md bg-cover bg-center bg-opacity-40 bg-[url("/header-bg.jpg")] h-16 flex capitalize tracking-wide font-bold text-blue-900 shadow-md border border-gray-400 px-2 justify-start items-center'>
+    <div className='text-2xl w-[80%] lg:w-full mx-auto rounded-md bg-cover bg-center bg-opacity-40 bg-[url("/header-bg.jpg")] h-16 flex capitalize tracking-wide font-bold text-blue-900 shadow-md border border-gray-400 px-2 justify-start items-center'>
       <h2 className={`text-shadow-lg font-extrabold ${roboto.className}`}>
       {content}
     </h2>
